@@ -258,10 +258,9 @@ c
     width: 410px;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    background: #ffffff; 
-  
-  
+    background: #ffffff;   
   }
+	/*
   .frohe-top {
     width: 50%;
     margin-left: auto;
@@ -271,7 +270,7 @@ c
     width: 80%;
     margin-left: auto;
   }
-
+*/
   .second {
     background: #ffffff;  
     padding-bottom: 30px; 
