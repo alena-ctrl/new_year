@@ -231,7 +231,7 @@ c
 
 /*-- ======================= 420  ======================== */
 
-@media (min-width: 420px) {
+@media (min-width: 320px) {
   #container {
     width: 100%;  
     text-align: center;
@@ -255,7 +255,7 @@ c
   }
 
   .first {
-    width: 410px;
+    width: 320px;
     display: grid;
     grid-template-columns: 2fr 1fr;
     background: #ffffff;   
