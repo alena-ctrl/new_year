@@ -241,6 +241,7 @@ c
     animation: snow 20s linear infinite;
     height: 100%;
   }
+  
 
   .wrap {
     margin: 0 auto;
@@ -252,16 +253,23 @@ c
     margin-inline: 0;
     padding: 10px;
   }
+
   .first {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-}
-.balls, .frohe-top, .frohe-bottom {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-}
+    width: 320px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background: #ffffff;   
+  }
+	
+  .frohe-top {
+    width: 40%;
+    margin-left: auto;
+    margin-top: 30px;
+  }
+  .frohe-bottom {
+    width: 50%;
+    margin-left: auto;
+  }
  .balls svg {
     height: 290px;
   }
@@ -352,35 +360,7 @@ c
 }
 
 
-/* Для iPhone (популярные разрешения) */
 
-@media screen and (max-device-width: 375px) and (-webkit-device-pixel-ratio: 2) {
-  .first {
-      width: 100%;
-      margin: 0 auto;
-      padding: 10px;
-      box-sizing: border-box;
-      overflow: hidden;
-  }
-
-  .balls {
-      width: 100%;
-      margin: 0 auto;
-      text-align: center;
-      overflow: hidden;
-  }
-
-  .frohe-top, .frohe-bottom {
-      width: 90%;
-      margin: 0 auto;
-      display: block;
-      text-align: center;
-  }
-
-  #snow_1, #right-circle {
-      will-change: transform, opacity;
-  }
-}
 
 /*-- ======================= 740  ======================== */
 
