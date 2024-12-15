@@ -9,7 +9,6 @@ function init() {
   const isMobile = window.outerWidth < 740;
   if (isMobile) {
     gsap.set("#frohe-block", { height: 0 });
-
   }
   tl.from("#first-page", { ease: "linear", autoAlpha: 0 })
     .from("#snow_1 > *", { stagger: 0.02 })
@@ -37,6 +36,8 @@ function init() {
     .from(buttonOpen, { duration: 0.4 }, "<");
 }
 
+
+
 function initSecondPage() {
   firstPage.classList.add("hide");
   tl2
@@ -46,9 +47,12 @@ function initSecondPage() {
 
 buttonOpen.addEventListener("click", initSecondPage);
 
+
 window.addEventListener("load", function () {
   init();
 });
+
+
 
 
 

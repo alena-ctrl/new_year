@@ -101,7 +101,7 @@ c
 }
 
 /* ================= first */
-
+/*
 .first {
   max-width: 720px;
   margin-inline: auto;
@@ -116,7 +116,7 @@ c
   width: 80%;
   margin-left: auto;
 }
-
+*/
 .box_links {
   width: 100%;
   display: flex;
@@ -227,9 +227,9 @@ c
   }
 }
 
-/*-- ======================= 320  ======================== */
+/*-- ======================= 375  ======================== */
 
-@media (min-width: 320px) {
+@media (min-width: 375px) {
   #container {
     width: 100%;  
     text-align: center;
@@ -241,6 +241,7 @@ c
     animation: snow 20s linear infinite;
     height: 100%;
   }
+
   .wrap {
     margin: 0 auto;
     padding: 0;
@@ -251,23 +252,16 @@ c
     margin-inline: 0;
     padding: 10px;
   }
-
   .first {
-    width: 320px;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    background: #ffffff;   
-  }
-	
-  .frohe-top {
-    width: 40%;
-    margin-left: auto;
-    margin-top: 30px;
-  }
-  .frohe-bottom {
-    width: 50%;
-    margin-left: auto;
-  }
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.balls, .frohe-top, .frohe-bottom {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
  .balls svg {
     height: 290px;
   }
@@ -334,22 +328,59 @@ c
 /*-- ======================= 420  ======================== */
 @media (min-width: 420px) { 
 .first {
-    width: 410px; 
+    max-width: 410px;
+    display: grid;
+    grid-template-columns: 1fr;
+    background: #ffffff; 
+
   }
 	 .frohe-top {
-    width: 50%;
-    margin-left: auto;
+    width: 50%;  
     margin-top: 30px;
+
   }
   .frohe-bottom {
     width: 70%;
-    margin-left: auto;
+  
   }
+
 .balls svg {
     height: 300px;
+    position:absolute;
+    left: -150px;
   }
 }
 
+
+/* Для iPhone (популярные разрешения) */
+
+@media screen and (max-device-width: 375px) and (-webkit-device-pixel-ratio: 2) {
+  .first {
+      width: 100%;
+      margin: 0 auto;
+      padding: 10px;
+      box-sizing: border-box;
+      overflow: hidden;
+  }
+
+  .balls {
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      overflow: hidden;
+  }
+
+  .frohe-top, .frohe-bottom {
+      width: 90%;
+      margin: 0 auto;
+      display: block;
+      text-align: center;
+  }
+
+  #snow_1, #right-circle {
+      will-change: transform, opacity;
+  }
+}
 
 /*-- ======================= 740  ======================== */
 
