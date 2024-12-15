@@ -101,7 +101,7 @@ c
 }
 
 /* ================= first */
-/*
+
 .first {
   max-width: 720px;
   margin-inline: auto;
@@ -116,7 +116,7 @@ c
   width: 80%;
   margin-left: auto;
 }
-*/
+
 .box_links {
   width: 100%;
   display: flex;
@@ -353,7 +353,7 @@ c
   }
 
 .balls svg {
-    height: 300px;
+    height: 200px;
 
   }
 }
