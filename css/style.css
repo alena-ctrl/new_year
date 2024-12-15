@@ -7,6 +7,7 @@ body {
   background-color: #000033;
   margin: 0px;
   overflow: hidden;
+
 }
 
 #container {
@@ -64,6 +65,7 @@ body {
   display: flex;
   align-items: center;
   min-height: 100vh;
+
 }
 .hide {
   display: none !important;
@@ -227,9 +229,9 @@ c
   }
 }
 
-/*-- ======================= 375  ======================== */
+/*-- ======================= 420  ======================== */
 
-@media (min-width: 375px) {
+@media (min-width: 420px) {
   #container {
     width: 100%;  
     text-align: center;
@@ -241,8 +243,6 @@ c
     animation: snow 20s linear infinite;
     height: 100%;
   }
-  
-
   .wrap {
     margin: 0 auto;
     padding: 0;
@@ -255,23 +255,24 @@ c
   }
 
   .first {
-    width: 320px;
+    width: 410px;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    background: #ffffff;   
+    background: #ffffff; 
+  
+  
   }
-	
   .frohe-top {
-    width: 40%;
+    width: 80%;
     margin-left: auto;
     margin-top: 30px;
   }
   .frohe-bottom {
-    width: 50%;
+    width: 100%;
     margin-left: auto;
   }
- .balls svg {
-    height: 290px;
+  .balls svg {
+    height: 300px;
   }
   .second {
     background: #ffffff;  
@@ -333,33 +334,6 @@ c
 }
 
 }
-/*-- ======================= 420  ======================== */
-@media (min-width: 420px) { 
-.first {
-    max-width: 410px;
-    display: grid;
-    grid-template-columns: 1fr;
-    background: #ffffff; 
-
-  }
-	 .frohe-top {
-    width: 50%;  
-    margin-top: 30px;
-
-  }
-  .frohe-bottom {
-    width: 70%;
-  
-  }
-
-.balls svg {
-    height: 200px;
-
-  }
-}
-
-
-
 
 /*-- ======================= 740  ======================== */
 
