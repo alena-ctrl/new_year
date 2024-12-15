@@ -7,7 +7,6 @@ body {
   background-color: #000033;
   margin: 0px;
   overflow: hidden;
-
 }
 
 #container {
@@ -79,7 +78,9 @@ body {
 .balls {
   text-align: center;
 }
-c
+.balls svg {
+  height: 400px;
+}
 .orbis-1 {
   text-align: right;
   margin-left: 30%;
@@ -134,6 +135,7 @@ c
   left: 30px;    
 }
 
+
 .button {
   text-align: center;
   width: 70px;
@@ -149,17 +151,18 @@ c
   margin-top: 22px;
   text-decoration: none;
 }
-
 .button-orbis-container {
   margin-bottom: 8%;
   margin-right: 10%;
 }
 
 .text_links {
-  width: 100px;  
-  color: #142c57;  
+  width: 100px;
+  margin-top: 20px;
+  color: #142c57;
+  margin-left: -35px;
+  
 }
-
 /* ================= second */
 .wrap-second {
   max-width: 1440px;
@@ -170,6 +173,10 @@ c
 .second {
   visibility: hidden;
 }
+/* 
+.second-left {
+  display: none;
+}*/
 
 .orbis-second-page {
   margin-top: 20px;
@@ -183,6 +190,11 @@ c
   position: relative;
   top: -10%;
 }
+
+
+
+
+
 
 .cont {
   width: 100%;
@@ -229,7 +241,9 @@ c
   }
 }
 
+
 /*-- ======================= 420  ======================== */
+
 
 @media (min-width: 420px) {
   #container {
@@ -241,132 +255,50 @@ c
     -moz-animation: snow 20s linear infinite;
     -ms-animation: snow 20s linear infinite;
     animation: snow 20s linear infinite;
-    height: 100%;
-  }
-  .wrap {
-    margin: 0 auto;
-    padding: 0;
   }
   .wrap-second {    
-    height: 100%;
-    display: block;
-    margin-inline: 0;
-    padding: 10px;
-  }
-
-  .first {
-    width: 410px;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    background: #ffffff; 
-  
-  
-  }
-  .frohe-top {
-    width: 80%;
-    margin-left: auto;
-    margin-top: 30px;
-  }
-  .frohe-bottom {
-    width: 100%;
-    margin-left: auto;
-  }
-  .balls svg {
-    height: 300px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 0;
   }
   .second {
-    background: #ffffff;  
-    padding-bottom: 30px; 
+    background: #ffffff;
   }
   .sing-second-page {
     margin-inline: 15%;
     width: 70%;
-  }
 
+  }
   .orbis-second-page {
     margin-right: 12%;
     position: relative;
     padding-bottom: 20px;
-}
 
-.second-left {
+}
+.snow-page-second{
   display: none;
 }
-
 .liebe {
   width: 150px;
   margin-inline: auto;
   margin-bottom: 10px;
  }
 .kunden {
-  width: 90%;
+  width: 500px;
   margin-inline: auto;
 }
-.orbis-1 {
-  text-align: right;
-  margin-left: 20%;
-}
-.button-orbis-container {  
-  margin-left: 10%;
-}
-.text_links {  
-  width: 100px;  
-  color: #142c57;
-  margin-left: -35px; 
-  margin-top: 20px;  
-}
-
-.box_left_links {
-  width: 100%;
-  position: fixed;
-  top: 750px;
-  left: 40px;   
-}
-.erst{
-  display: block;
-  position: fixed;
-  padding-left: 20px; 
-}
-.fulls {
-  display: block;
-  position: fixed;
-  margin-top: 35px;
-}
-
 }
 
 /*-- ======================= 740  ======================== */
 
 
 @media (min-width: 740px) {
-  #container {
-    width: 100%;  
-    text-align: center;
-    color: #ffffff;
-    background-image: url('https://www.krasotaiskusstva.com/themes/merry-christmas/_images/snowh.png'), url('https://www.krasotaiskusstva.com/themes/merry-christmas/_images/snow3q.png'), url('https://www.krasotaiskusstva.com/themes/merry-christmas/_images/snow2l.png');
-    -webkit-animation: snow 20s linear infinite;
-    -moz-animation: snow 20s linear infinite;
-    -ms-animation: snow 20s linear infinite;
-    animation: snow 20s linear infinite;
-  }
-  .fulls {
-    display:block; 
-    opacity: 0;
-  }
   .wrap {
     padding-top: 0;
-    margin: 0 auto;
+    
   }
-  .wrap-second {  
-    min-height: 100%;
-    padding: auto;
-    margin-inline: auto;
-    padding: 10px;
-  }
-
   .first {
-    width: 720px;
-    margin-inline: auto;
     display: grid;
     grid-template-columns: 2fr 1fr;
     background: #ffffff;
@@ -389,10 +321,6 @@ c
     width: 80%;
     margin-left: auto;
   }
-  
-  .balls svg {
-    height: 400px;
-  }
   /* ================= second */
   .wrap-second {    
     min-height: 100vh;
@@ -414,47 +342,31 @@ c
 
   .snow-page-second{
     display: flex;
-    position: relative;
-    bottom: 11%;
   }
- 
   .liebe {
-    width: 180px;
+    width: 110px;
     margin-inline: auto;
-    margin-bottom: 10px;
    }
   .kunden {
-    width: 600px;
-    margin-inline: auto;
+    width: 500px;
   }
   .sing-second-page {
     margin-inline: 25%;
     width: 50%;
     position: relative;
-    top: -25%;
+    top: -13%;
   }
   .orbis-second-page {
     width: 15%;
     margin-right: 10%;
     position: relative;
-    bottom: 33%;
+    bottom: 20%;
   }
   .box_left_links {
     width: 100%;
     position: fixed;
-    top: 8% !important;
-    left: 8% !important;    
+    top: 50px;
+    left: 30px;    
   }
-  .text_links {   
-    float: left; 
-    margin-top: 20px;
-    width: 100px;    
-    color: #142c57;    
-  }
-
-  .button-orbis-container {
-    margin-bottom: 5%;
-    margin-right: 35%;
-  } 
 
 }

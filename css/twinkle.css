@@ -1,0 +1,22 @@
+.sky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: black; /* Or transparent if it overlays */
+    z-index: -1;
+}
+
+.sky {
+    background: red; /* Debug color */
+}
+
+.star {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: white;
+    border: 1px solid red; /* Debug border */
+    animation: twinkle 3s infinite ease-in-out;
+}

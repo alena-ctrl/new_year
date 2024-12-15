@@ -2664,15 +2664,14 @@
                 </g>
               </g>
             </svg>
-        </div>
+            </div>
   
             <div class="button-orbis-container">
               <div class="button" id="button">
               <a href="secondPage.html">
                 <img class="btn-open" src="img/btn.png" />
-
+                <p class="text_links">Hier klicken </p>
               </a>
-              <p class="text_links erst">Hier klicken </p>
               
             </div>
           </div>
