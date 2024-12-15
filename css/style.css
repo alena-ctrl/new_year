@@ -7,7 +7,6 @@ body {
   background-color: #000033;
   margin: 0px;
   overflow: hidden;
-
 }
 
 #container {
@@ -65,7 +64,6 @@ body {
   display: flex;
   align-items: center;
   min-height: 100vh;
-
 }
 .hide {
   display: none !important;
@@ -260,17 +258,19 @@ c
     grid-template-columns: 2fr 1fr;
     background: #ffffff;   
   }
-	/*
+	
   .frohe-top {
-    width: 50%;
+    width: 40%;
     margin-left: auto;
     margin-top: 30px;
   }
   .frohe-bottom {
-    width: 80%;
+    width: 50%;
     margin-left: auto;
   }
-*/
+ .balls svg {
+    height: 290px;
+  }
   .second {
     background: #ffffff;  
     padding-bottom: 30px; 
@@ -334,10 +334,19 @@ c
 /*-- ======================= 420  ======================== */
 @media (min-width: 420px) { 
 .first {
-    width: 320px;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    background: #ffffff;   
+    width: 410px; 
+  }
+	 .frohe-top {
+    width: 50%;
+    margin-left: auto;
+    margin-top: 30px;
+  }
+  .frohe-bottom {
+    width: 70%;
+    margin-left: auto;
+  }
+.balls svg {
+    height: 300px;
   }
 }
 
