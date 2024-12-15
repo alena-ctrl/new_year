@@ -9,7 +9,7 @@ function init() {
   const isMobile = window.outerWidth < 740;
   if (isMobile) {
     gsap.set("#frohe-block", { height: 0 });
-    document.querySelector("#frohe-block").style.margin = "0 10px";
+
   }
   tl.from("#first-page", { ease: "linear", autoAlpha: 0 })
     .from("#snow_1 > *", { stagger: 0.02 })
