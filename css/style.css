@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
 
-* {
+*{
   box-sizing: border-box;
 }
 body {
@@ -9,7 +9,10 @@ body {
   overflow: hidden;
 
 }
-
+ 
+/*----------------------------
+	.-- sneg
+-----------------------------*/
 #container {
   width: 100%;  
   text-align: center;
@@ -20,7 +23,6 @@ body {
   -ms-animation: snow 20s linear infinite;
   animation: snow 20s linear infinite;
 }
-
 /*----------------------------
 	.-- Key Frames
 -----------------------------*/
@@ -56,37 +58,9 @@ body {
     background-position: 500px 1000px, 400px 400px, 300px 300px;
   }
 }
-
-.wrap {
-  max-width: 1440px;
-  margin-inline: auto;
-  padding-inline: 1rem;
-  padding-top: 1rem;
-  display: flex;
-  align-items: center;
-  min-height: 100vh;
-
-}
-.hide {
-  display: none !important;
-}
-.first {
-  visibility: hidden;
-}
-.frohe {
-  margin-bottom: 2rem;
-}
-.balls {
-  text-align: center;
-}
-c
-.orbis-1 {
-  text-align: right;
-  margin-left: 30%;
-}
-.orbis-1 svg {
-  width: 100px;  
-}
+/*----------------------------
+	.-- konez sneg
+-----------------------------*/
 
 .snow-ball {
   transform-origin: 50% 50%;
@@ -102,90 +76,100 @@ c
   }
 }
 
+.wrap {
+  max-width: 720px;
+  margin-inline: auto;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
 /* ================= first */
 
 .first {
-  max-width: 720px;
+  width: 720px;
+  height: auto;
   margin-inline: auto;
+  padding-inline: 1rem;
+  padding-bottom: 1rem;
+  display: grid;
+  grid-template-areas:
+  "a b"
+  "c c";
+  background: #ffffff;
+
 }
 
-.frohe-top {
-  width: 50%;
-  margin-left: auto;
-  margin-top: 30px;
-}
-.frohe-bottom {
-  width: 80%;
-  margin-left: auto;
+.item1 {
+  grid-area: a;
+  width: 400px;
 }
 
-.box_links {
-  width: 100%;
+.item2 {
+  grid-area: b;
+  width: 300px;
+}
+.item3 {
+  grid-area: c;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-left: 50%;
-  margin-bottom: 20px;
+  justify-content: center;
 }
 
-.box_left_links {
-  width: 100%;
-  position: fixed;
-  left: 30px;    
+.orbis-1 {
+  text-align: right; 
+  margin-right: 0px;
 }
+.orbis-1 svg {
+  width: 100px; 
 
-.button {
-  text-align: center;
-  width: 70px;
-  height: 70px;
-  border: 2px solid #000033;
-  border-radius: 50px; 
-   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
-.button a {
-  width: 30px;
-  height: 40px;
-  display: inline-block;
-  margin-top: 22px;
-  text-decoration: none;
 }
 
 .button-orbis-container {
-  margin-bottom: 8%;
-  margin-right: 10%;
+  padding: 0;
+  
 }
+
+.button {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #000033;
+  border-radius: 50px; 
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+
+.button a {
+    width: 30px;
+    height: 40px;
+    text-decoration: none;
+    margin-left: 30%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 .text_links {
-  width: 100px;  
-  color: #142c57;  
+  margin-left: 40px;
+  width: 150px;  
+  color: #142c57;
 }
 
-/* ================= second */
-.wrap-second {
-  max-width: 1440px;
-  margin-inline: auto;
-  padding-inline: 1rem;
-  padding-top: 1rem;
-}
-.second {
-  visibility: hidden;
+.erst{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.orbis-second-page {
-  margin-top: 20px;
-  width: 100px;
-  margin-left: auto;
-}
 
-.sing-second-page {
-  margin-inline: 25%;
-  width: 40%;
-  position: relative;
-  top: -10%;
-}
+/* ================= merzanie */
 
 .cont {
-  width: 100%;
+  width:90%;
   margin: 0 auto;
   position: relative;
 }
@@ -215,12 +199,15 @@ c
 .c15 { top: 75px; left: 636px; animation-delay: 1s; }
 .c16 { top: 100px; left: 398px; animation-delay: 2s; }
 .c17 { top: 106px; left: 456px; animation-delay: 3s; }
-.c18 { top: 362px; left: 566px; animation-delay: 4s; }
+.c18 { top: 200px; left: 566px; animation-delay: 4s; }
+.c19 { top: 50px; left: 670px; animation-delay: 1s; }
+/* 
 .c19 { top: 370px; left: 670px; animation-delay: 1s; }
 .c20 { top: 30px; left: 690px; animation-delay: 2s; }
 .c21 { top: 246px; left: 660px; animation-delay: 3s; }
+*/
 
-@-webkit-keyframes glow {
+@keyframes glow {
   from {
       text-shadow: 0;
   }
@@ -228,233 +215,97 @@ c
       box-shadow: 0px 10px 30px 15px rgba(103, 101, 240, 0.5);
   }
 }
+/* ================= merzanie konez*/
 
-/*-- ======================= 420  ======================== */
 
-@media (min-width: 420px) {
-  #container {
-    width: 100%;  
-    text-align: center;
-    color: #ffffff;
-    background-image: url('https://www.krasotaiskusstva.com/themes/merry-christmas/_images/snowh.png'), url('https://www.krasotaiskusstva.com/themes/merry-christmas/_images/snow3q.png'), url('https://www.krasotaiskusstva.com/themes/merry-christmas/_images/snow2l.png');
-    -webkit-animation: snow 20s linear infinite;
-    -moz-animation: snow 20s linear infinite;
-    -ms-animation: snow 20s linear infinite;
-    animation: snow 20s linear infinite;
-    height: 100%;
-  }
+.snow {
+  padding: 2px;
+}
+
+.frohe {  
+  display: block;
+  margin-right: 2rem;
+}
+
+.frohe-top {
+  width: 50%;
+  margin-left: auto;
+  margin-top: 30px;
+}
+.frohe-bottom {
+  width: 80%;
+  margin-left: auto;
+}
+.balls {
+ margin-right: 0;
+}
+.balls svg {
+  height: 100%;
+  padding-right: 0;
+}
+
+
+
+@media only screen and (min-width: 320px) {
   .wrap {
-    margin: 0 auto;
-    padding: 0;
+    max-width: 320px;
+    min-height: 100vh;
   }
-  .wrap-second {    
-    height: 100%;
-    display: block;
-    margin-inline: 0;
-    padding: 10px;
-  }
-
+  
+  /* ================= first */
+  
   .first {
-    width: 410px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background: #ffffff; 
+    width: 320px;
+    height: auto; 
+  }
+
+  .item1 {
+    grid-area: a;
+    width: 180px;
+  }
   
+  .item2 {
+    grid-area: b;
+    width: 120px;
+  }
+  .item3 {
+    grid-area: c;
+    justify-content: flex-start; 
   
   }
-  .frohe-top {
-    width: 80%;
-    margin-left: auto;
-    margin-top: 30px;
+  .orbis-1 {
+    margin-right: 20px;
   }
-  .frohe-bottom {
-    width: 100%;
-    margin-left: auto;
-  }
-  .balls svg {
-    height: 300px;
-  }
-  .second {
-    background: #ffffff;  
-    padding-bottom: 30px; 
-  }
-  .sing-second-page {
-    margin-inline: 15%;
-    width: 70%;
-  }
-
-  .orbis-second-page {
-    margin-right: 12%;
-    position: relative;
-    padding-bottom: 20px;
-}
-
-.second-left {
-  display: none;
-}
-
-.liebe {
-  width: 150px;
-  margin-inline: auto;
-  margin-bottom: 10px;
- }
-.kunden {
-  width: 90%;
-  margin-inline: auto;
-}
-.orbis-1 {
-  text-align: right;
-  margin-left: 20%;
-}
-.button-orbis-container {  
-  margin-left: 10%;
-}
-.text_links {  
-  width: 100px;  
-  color: #142c57;
-  margin-left: -35px; 
-  margin-top: 20px;  
-}
-
-.box_left_links {
-  width: 100%;
-  position: fixed;
-  top: 750px;
-  left: 40px;   
-}
-.erst{
-  display: block;
-  position: fixed;
-  padding-left: 20px; 
-}
-.fulls {
-  display: block;
-  position: fixed;
-  margin-top: 35px;
-}
 
 }
 
 /*-- ======================= 740  ======================== */
-
-
 @media (min-width: 740px) {
-  #container {
-    width: 100%;  
-    text-align: center;
-    color: #ffffff;
-    background-image: url('https://www.krasotaiskusstva.com/themes/merry-christmas/_images/snowh.png'), url('https://www.krasotaiskusstva.com/themes/merry-christmas/_images/snow3q.png'), url('https://www.krasotaiskusstva.com/themes/merry-christmas/_images/snow2l.png');
-    -webkit-animation: snow 20s linear infinite;
-    -moz-animation: snow 20s linear infinite;
-    -ms-animation: snow 20s linear infinite;
-    animation: snow 20s linear infinite;
-  }
-  .fulls {
-    display:block; 
-    opacity: 0;
-  }
   .wrap {
-    padding-top: 0;
-    margin: 0 auto;
-  }
-  .wrap-second {  
-    min-height: 100%;
-    padding: auto;
-    margin-inline: auto;
-    padding: 10px;
-  }
-
-  .first {
-    width: 720px;
-    margin-inline: auto;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    background: #ffffff;
-    height: 540px;
-  }
-
-  .frohe {
-    margin-bottom: 0;
-  }
-  .orbis-1 {
-    grid-column: 2;
-    padding-bottom: 20px;
-  }
-  .frohe-top {
-    width: 50%;
-    margin-left: auto;
-    margin-right: 50px;
-  }
-  .frohe-bottom {
-    width: 80%;
-    margin-left: auto;
+    max-width: 720px; 
+    min-height: 100vh;
   }
   
-  .balls svg {
-    height: 400px;
+  /* ================= first */
+  
+  .first {
+    width: 720px;
+    height: 540px;  
   }
-  /* ================= second */
-  .wrap-second {    
-    min-height: 100vh;
+  
+  .item1 {
+    grid-area: a;
+    width: 400px;
+  }
+  
+  .item2 {
+    grid-area: b;
+    width: 300px;
+  }
+  .item3 {
+    grid-area: c;
     display: flex;
     align-items: center;
-    padding-top: 0;
+    justify-content: center;  
   }
-  .second {
-    display: grid;
-    height: 540px;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    background: #ffffff;
-  }
-  .second-left {
-    display: initial;
-    padding-top: 200px;
-  }
-
-  .snow-page-second{
-    display: flex;
-    position: relative;
-    bottom: 11%;
-  }
- 
-  .liebe {
-    width: 180px;
-    margin-inline: auto;
-    margin-bottom: 10px;
-   }
-  .kunden {
-    width: 600px;
-    margin-inline: auto;
-  }
-  .sing-second-page {
-    margin-inline: 25%;
-    width: 50%;
-    position: relative;
-    top: -25%;
-  }
-  .orbis-second-page {
-    width: 15%;
-    margin-right: 10%;
-    position: relative;
-    bottom: 33%;
-  }
-  .box_left_links {
-    width: 100%;
-    position: fixed;
-    top: 8% !important;
-    left: 8% !important;    
-  }
-  .text_links {   
-    float: left; 
-    margin-top: 20px;
-    width: 100px;    
-    color: #142c57;    
-  }
-
-  .button-orbis-container {
-    margin-bottom: 5%;
-    margin-right: 35%;
-  } 
-
 }
