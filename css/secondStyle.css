@@ -35,6 +35,7 @@ body {
     background: #ffffff;
   }
   .second-left {
+    width: 720px;
     height: 540px;    
     display: grid;
     grid-template-areas:
@@ -82,17 +83,15 @@ body {
   }
 
   .item-left-2 {
+    width: 100%;
+    margin-inline: auto;
     grid-area: b1;
     display: flex;
     flex-direction: column;
     align-items: center;
 
   }
-  .snow-page-second{
-    grid-area: c1;
-    display: flex;
 
-  }
 
   .liebe {
     width: 200px;
@@ -100,10 +99,16 @@ body {
     margin-bottom: 20px;
    }
   .kunden {
-    width: 600px;
+    width: 650px;
     margin-inline: auto;
   }
+  .snow-page-second{
+    width: 100%;
+    grid-area: c1;
+    display: flex;
+    margin: 0;
 
+  }
   .second-right {
     height: 540px;    
     display: grid;
