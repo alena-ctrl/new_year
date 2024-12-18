@@ -1,190 +1,410 @@
 body {
-    margin: 0;
-    font-family: "Roboto Flex", sans-serif;
-  }
-  h1,
-  h2,
-  h3,
-  p {
-    margin-top: 0;
-    margin-bottom: 12px;
-    font-size: 15px;
-    line-height: 1.2;
-  }
-  h1,
-  h2,
-  h3 {
-    font-weight: 500;
-  }
+  margin: 0;
+  font-family: "Roboto Flex", sans-serif;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 15px;
+  line-height: 1.2;
+}
+h1,
+h2,
+h3 {
+  font-weight: 500;
+}
 
 
 
-  @media only screen and (min-width: 375px) {
-    .wrap-second {
-      max-width: 100%;
-      margin-inline: auto;
-      padding-inline: 10px;
-      padding-top: 1rem;
-    }
-    .second {
-      display: flex;
-      flex-direction: column;
-
-      background: #ffffff;
-      padding: 10px;
-      margin-inline: 0;
-    }
-    .second-left {
-      display: none;
-    }
-    .second-right {
-  
-      display: grid;
-      grid-template-columns: 1fr;
-      justify-content: center; 
-  
-    }
-    .snow-second-page {
-      display: flex;
-      width: 100%;  
-      padding: 0 10px;
-      align-items: first baseline;
-    }
-    
-    .text-second-wrap {
-      width: 100%;
-      margin-inline: auto;
-      position: relative;
-      top: -70px;
-    }
-    .liebe {
-      width: 100px;
-      margin-inline: auto;
-      margin-bottom: 10px;
-     }
-    .kunden {
-      width: 280px;
-      margin-inline: auto;
-    }
-
-    .text-second-page {
-      display: flex;
-      flex-wrap: wrap; 
-      margin-inline: 10px;
-      text-align: center;   
-      color: black;
-
-      position: relative;
-      top: -50px;
-  
-    }
-    .sing-second-page {
-      margin: 0 auto;
-      width: 70%;
-      position: relative;
-      top: -50px;  
-    }
-    .orbis-second-page {
-      width: 30%;
-      margin-right: 2%;
-      position: relative;
-      display: flex;
-      top: -50px;
-      left: 200px;
-    }
-
-    .item-second-but {
-      width: 100%;
-      display: block;
-      flex-direction: column;
-
-    } 
-    .fulls {
-      display: flex;
-      flex-wrap: wrap;
-      position: relative;
-      top: -100px;
-      left: 20px;
-    }
-    .button_r {
-      display: flex;
-      justify-content: space-evenly;
-      text-align: center;
-      width: 60px;
-      height: 60px;
-      border: 2px solid #000033;
-      border-radius: 50px; 
-      box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-      padding-top: 20px;
-      }
-    
-    .button_r a {
-      width: 30px;
-      height: 40px;
-      text-decoration: none;
-      align-items: center;
-
-    }
-    .text_links_r {
-      position: fixed;
-      bottom: 60px;
-      left: -35px;
-      width: 150px;  
-      color: #142c57;
-    }
-  }
-  
-    /*-- ======================= 420  ======================== */
-    @media (min-width: 420px) {
-      .wrap-second {
-        max-width: 420px;
-      }
-      .snow-second-page {
-        width: 400px;  
-      }
-          
-    .text-second-wrap {
-      width: 100%;
-      margin-inline: auto;
-      position: relative;
-      top: -30px;
-    }
-
-    }
-
-
-
-
-  /*-- ======================= 740  ======================== */
-  @media (min-width: 740px) {
-
-
-    .wrap-second {  
-      width: 1400px;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      padding-top: 0;
-      padding: auto;
-      margin-inline: auto;
+@media only screen and (min-width: 375px) {
+  .wrap-second {
+    max-width: 100%;
+    margin-inline: auto;
+    padding-inline: 10px;
+    padding-top: 1rem;
   }
   .second {
-    display: grid;
-    height: 540px;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    display: flex;
+    flex-direction: column;
     background: #ffffff;
+    padding: 10px;
+    margin-inline: 0;
   }
   .second-left {
-    width: 720px;
-    height: 540px;    
+    display: none;
+  }
+  .second-right {
     display: grid;
-    grid-template-areas:
-        "a1"
-        "b1"
-        "c1";
-    align-items: center;
+    grid-template-columns: 1fr;
     justify-content: center; 
 
   }
+  .snow-second-page {
+    display: flex;
+    width: 100%;  
+    padding: 0 10px;
+    align-items: first baseline;
+  }
+  
+  .text-second-wrap {
+    width: 100%;
+    margin-inline: auto;
+    position: relative;
+    top: -70px;
+  }
+  .liebe {
+    width: 100px;
+    margin-inline: auto;
+    margin-bottom: 10px;
+   }
+  .kunden {
+    width: 280px;
+    margin-inline: auto;
+  }
+
+  .text-second-page {
+    display: flex;
+    flex-wrap: wrap; 
+    margin-inline: 10px;
+    text-align: center;   
+    color: black;
+    position: relative;
+    top: -50px;
+
+  }
+  .sing-second-page {
+    margin: 0 auto;
+    width: 70%;
+    position: relative;
+    top: -50px;  
+  }
+  .orbis-second-page {
+    width: 30%;
+    margin-right: 2%;
+    position: relative;
+    display: flex;
+    top: -40px;
+    left: 250px;
+  }
+
+  .item-second-but {
+    width: 100%;
+    display: block;
+    flex-direction: column;
+  } 
+
+  .fulls {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: -100px;
+    left: 20px;
+  }
+  .button_r {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 60px;
+    height: 60px;   
+    padding-top: 20px;
+    }
+  
+  .button_r a {
+    width: 30px;
+    height: 40px;
+    text-decoration: none;
+    align-items: center;
+  }
+  .text_links_r {
+    position: fixed;
+    bottom: 70px;
+    left: -25px;
+    width: 150px;  
+    color: #142c57;
+  }
+}
+
+  /*-- ======================= 420  ======================== */
+/* iPhone XS Max, XR, 11, 11 Pro Max (портретный режим) */
+
+@media only screen and (orientation: portrait) and (min-device-width: 414px) and (max-device-height: 896px) and (-webkit-device-pixel-ratio: 3){
+
+  .wrap-second {
+    max-width: 100%;
+    margin-inline: auto;
+    padding-inline: 10px;
+    padding-top: 1rem;
+  }
+  .second {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    padding: 10px;
+    margin-inline: 0;
+  }
+  .second-left {
+    display: none;
+  }
+  .second-right {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center; 
+
+  }
+  .snow-second-page {
+    display: flex;
+    width: 100%;  
+    padding: 0 10px;
+    align-items: first baseline;
+  }
+  
+  .text-second-wrap {
+    width: 100%;
+    margin-inline: auto;
+    position: relative;
+    top: -70px;
+  }
+  .liebe {
+    width: 100px;
+    margin-inline: auto;
+    margin-bottom: 10px;
+   }
+  .kunden {
+    width: 280px;
+    margin-inline: auto;
+  }
+
+  .text-second-page {
+    display: flex;
+    flex-wrap: wrap; 
+    margin-inline: 10px;
+    text-align: center;   
+    color: black;
+    position: relative;
+    top: -50px;
+
+  }
+  .sing-second-page {
+    margin: 0 auto;
+    width: 70%;
+    position: relative;
+    top: -50px;  
+  }
+  .orbis-second-page {
+    width: 30%;
+    margin-right: 2%;
+    position: relative;
+    display: flex;
+    top: -40px;
+    left: 200px;
+  }
+
+  .item-second-but {
+    width: 100%;
+    display: block;
+    flex-direction: column;
+  } 
+
+  .fulls {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: -100px;
+    left: 50px;
+  }
+  .button_r {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 60px;
+    height: 60px;   
+    padding-top: 20px;
+    }
+  
+  .button_r a {
+    width: 30px;
+    height: 40px;
+    text-decoration: none;
+    align-items: center;
+  }
+  .text_links_r {
+    position: fixed;
+    bottom: 70px;
+    left: -25px;
+    width: 150px;  
+    color: #142c57;
+  }
+
+}
+
+/*-- ======================= 512  ======================== */
+@media (min-width: 500px) {
+  .sing-second-page {
+    margin: 0 auto;
+    width: 80%;
+    position: relative;
+    top: -50px;  
+  }
+  .orbis-second-page {
+    width: 20%;
+    margin-right: 2%;
+    position: relative;
+    display: flex;
+    top: -35px;
+    left: 350px;
+  }
+}
+
+
+/*-- ======================= 740  ======================== */
+@media (min-width: 740px) {
+.wrap-second {  
+    width: 1400px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 0;
+    padding: auto;
+    margin-inline: auto;
+}
+.second {
+  display: grid;
+  height: 540px;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  background: #ffffff;
+}
+.second-left {
+  width: 720px;
+  height: 540px;    
+  display: grid;
+  grid-template-areas:
+      "a1"
+      "b1"
+      "c1";
+  align-items: center;
+  justify-content: center;
+}
+.item-left-1 {
+  grid-area: a1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;    
+}
+.button_li {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #000033;
+  border-radius: 50px; 
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+
+.button_li a {
+  width: 30px;
+  height: 40px;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text_links_l {
+  position: fixed;
+  top: 100px;
+  width: 150px;  
+  color: #142c57;
+}
+
+.item-left-2 {
+  width: 100%;
+  margin-inline: auto;
+  grid-area: b1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.liebe {
+  width: 200px;
+  margin-inline: auto;
+  margin-bottom: 20px;
+ }
+.kunden {
+  width: 650px;
+  margin-inline: auto;
+}
+.snow-page-second{
+  width: 100%;
+  grid-area: c1;
+  display: flex;
+  margin: 0;
+}
+
+
+.second-right {
+  width: 720px;
+  height: 540px;    
+  display: grid;
+  grid-template-areas:
+      "d1 d1"
+      "v1 v1"
+      "n1 n1"
+      "f1 f1"
+;
+  align-items: center;
+  justify-content: center; 
+}
+.snow-second-page {
+  grid-area: d1;
+  display: flex;
+  width: 100%;
+}
+
+.text-second-wrap {
+  grid-area: v1;
+  display: none;
+}
+
+.text-second-page {
+  grid-area: n1;
+  width: 100%;
+  margin-inline: 10px;
+  text-align: center;
+  padding: 0 60px;
+  display: flex;
+  flex-wrap: wrap;    
+  justify-content: center; 
+  color: black;
+  position: relative;
+  top: -80px;
+}
+
+.sing-second-page {
+  grid-area: f1;
+  margin-inline: 25%;
+  width: 50%;
+  position: relative;
+  top: -60px;
+}
+
+.orbis-second-page {
+  display: flex;
+  width: 100px; 
+  position: absolute;
+  top: 450px;
+  left: 550px;
+
+}
+.item-second-but {
+
+  display: none;
+} 
 }
