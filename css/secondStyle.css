@@ -17,17 +17,139 @@ body {
     font-weight: 500;
   }
 
-.wrap-second {  
-    width: 1400px;  
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    padding-top: 0;
-    padding: auto;
-    margin-inline: auto;
-  }
 
- .second {
+
+  @media only screen and (min-width: 320px) {
+    .wrap-second {
+      max-width: 320px;
+      min-height: 100vh;
+      margin-inline: auto;
+      padding-inline: 1rem;
+      padding-top: 1rem;
+    }
+    .second {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      background: #ffffff;
+      padding: 10px;
+      margin-inline: 0;
+    }
+    .second-left {
+      display: none;
+    }
+    .second-right {
+      min-height: 780px;  
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-content: center; 
+  
+    }
+    .snow-second-page {
+
+      display: flex;
+      width: 300px;  
+      padding: 0 10px;
+      align-items: first baseline;
+    }
+    
+    .text-second-wrap {
+      width: 100%;
+      margin-inline: auto;
+      position: relative;
+      top: -20px;
+    }
+    .liebe {
+      width: 100px;
+      margin-inline: auto;
+      margin-bottom: 10px;
+     }
+    .kunden {
+      width: 280px;
+      margin-inline: auto;
+    }
+
+    .text-second-page {
+      display: flex;
+      flex-wrap: wrap; 
+      margin-inline: 10px;
+      text-align: center;   
+      color: black;
+      padding: 0 10px;
+      position: relative;
+      top: -10px;
+  
+    }
+    .sing-second-page {
+      margin: 0 auto;
+      width: 70%;
+      position: relative;
+      top: -10px;  
+    }
+    .orbis-second-page {
+      width: 30%;
+      margin-right: 2%;
+      position: relative;
+      display: flex;
+      top: 10px;
+      left: 170px;
+    }
+
+    .item-second-but {
+      width: 100%;
+      display: block;
+      flex-direction: column;
+
+    } 
+    .fulls {
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      top: -35px;
+      left: 20px;
+    }
+    .button_r {
+      display: flex;
+      justify-content: space-evenly;
+      text-align: center;
+      width: 60px;
+      height: 60px;
+      border: 2px solid #000033;
+      border-radius: 50px; 
+      box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+      padding-top: 20px;
+      }
+    
+    .button_r a {
+      width: 30px;
+      height: 40px;
+      text-decoration: none;
+      align-items: center;
+
+    }
+    .text_links_r {
+      position: fixed;
+      bottom: -10px;
+      left: -35px;
+      width: 150px;  
+      color: #142c57;
+    }
+  }
+  
+  /*-- ======================= 740  ======================== */
+  @media (min-width: 740px) {
+
+
+    .wrap-second {  
+      width: 1400px;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding-top: 0;
+      padding: auto;
+      margin-inline: auto;
+  }
+  .second {
     display: grid;
     height: 540px;
     grid-template-columns: 1fr 1fr;
@@ -46,129 +168,4 @@ body {
     justify-content: center; 
 
   }
-
-  .item-left-1 {
-    grid-area: a1;
-    width: 100%;
-    display: flex;
-    flex-direction: column;    
-  }
-  .button_li {
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    width: 60px;
-    height: 60px;
-    border: 2px solid #000033;
-    border-radius: 50px; 
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    }
-  
-  .button_li a {
-    width: 30px;
-    height: 40px;
-    text-decoration: none;
-    margin-left: 20%;
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .text_links_l {
-    position: fixed;
-    top: 100px;
-    width: 150px;  
-    color: #142c57;
-  }
-
-  .item-left-2 {
-    width: 100%;
-    margin-inline: auto;
-    grid-area: b1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-  }
-
-
-  .liebe {
-    width: 200px;
-    margin-inline: auto;
-    margin-bottom: 20px;
-   }
-  .kunden {
-    width: 650px;
-    margin-inline: auto;
-  }
-  .snow-page-second{
-    width: 100%;
-    grid-area: c1;
-    display: flex;
-    margin: 0;
-
-  }
-  .second-right {
-    height: 540px;    
-    display: grid;
-    grid-template-areas:
-        "d1 d1"
-        "v1 v1"
-        "n1 n1"
-        "f1 f1"
-        "k1 m1";
-    align-items: center;
-    justify-content: center; 
-
-  }
-
-  
-  .snow-second-page {
-    grid-area: d1;
-    display: flex;
-    width: 100%;
-
-  }
-
-  .text-second-wrap {
-    grid-area: v1;
-    visibility: hidden;
-
-  }
-
-  .text-second-page {
-    grid-area: n1;
-    margin-inline: 12%;
-    text-align: center;
-    position: fixed;
-    display: flex;
-    flex-wrap: wrap;    
-    color: black;
-    top: -280px;
-
-  }
-  
-  .sing-second-page {
-    grid-area: f1;
-    margin-inline: 25%;
-    width: 50%;
-    position: fixed;
-    top: 80%;
-    
-
-  }
-
-  .orbis-second-page {
-    grid-area: m1;
-    width: 30%;
-    margin-right: 2%;
-    position: relative;
-    display: flex;
-    top: 10%;
-    left: 50%;
-  }
-  .item-second-but {
-    grid-area: k1;
-    visibility: hidden;
-  } 
+}
