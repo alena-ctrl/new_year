@@ -21,16 +21,15 @@ body {
 
   @media only screen and (min-width: 375px) {
     .wrap-second {
-      max-width: 375px;
-
+      max-width: 100%;
       margin-inline: auto;
-      padding-inline: 1rem;
+      padding-inline: 10px;
       padding-top: 1rem;
     }
     .second {
       display: flex;
       flex-direction: column;
-      height: auto;
+
       background: #ffffff;
       padding: 10px;
       margin-inline: 0;
@@ -39,7 +38,7 @@ body {
       display: none;
     }
     .second-right {
-      min-height: 550px;  
+  
       display: grid;
       grid-template-columns: 1fr;
       justify-content: center; 
@@ -47,7 +46,7 @@ body {
     }
     .snow-second-page {
       display: flex;
-      width: 350px;  
+      width: 100%;  
       padding: 0 10px;
       align-items: first baseline;
     }
@@ -74,7 +73,7 @@ body {
       margin-inline: 10px;
       text-align: center;   
       color: black;
-      padding: 0 10px;
+
       position: relative;
       top: -50px;
   
