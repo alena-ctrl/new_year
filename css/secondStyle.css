@@ -19,10 +19,10 @@ body {
 
 
 
-  @media only screen and (min-width: 320px) {
+  @media only screen and (min-width: 375px) {
     .wrap-second {
-      max-width: 320px;
-      min-height: 100vh;
+      max-width: 375px;
+
       margin-inline: auto;
       padding-inline: 1rem;
       padding-top: 1rem;
@@ -39,16 +39,15 @@ body {
       display: none;
     }
     .second-right {
-      min-height: 780px;  
+      min-height: 550px;  
       display: grid;
       grid-template-columns: 1fr;
       justify-content: center; 
   
     }
     .snow-second-page {
-
       display: flex;
-      width: 300px;  
+      width: 350px;  
       padding: 0 10px;
       align-items: first baseline;
     }
@@ -57,7 +56,7 @@ body {
       width: 100%;
       margin-inline: auto;
       position: relative;
-      top: -20px;
+      top: -70px;
     }
     .liebe {
       width: 100px;
@@ -77,22 +76,22 @@ body {
       color: black;
       padding: 0 10px;
       position: relative;
-      top: -10px;
+      top: -50px;
   
     }
     .sing-second-page {
       margin: 0 auto;
       width: 70%;
       position: relative;
-      top: -10px;  
+      top: -50px;  
     }
     .orbis-second-page {
       width: 30%;
       margin-right: 2%;
       position: relative;
       display: flex;
-      top: 10px;
-      left: 170px;
+      top: -50px;
+      left: 200px;
     }
 
     .item-second-but {
@@ -105,7 +104,7 @@ body {
       display: flex;
       flex-wrap: wrap;
       position: relative;
-      top: -35px;
+      top: -100px;
       left: 20px;
     }
     .button_r {
@@ -129,13 +128,34 @@ body {
     }
     .text_links_r {
       position: fixed;
-      bottom: -10px;
+      bottom: 60px;
       left: -35px;
       width: 150px;  
       color: #142c57;
     }
   }
   
+    /*-- ======================= 420  ======================== */
+    @media (min-width: 420px) {
+      .wrap-second {
+        max-width: 420px;
+      }
+      .snow-second-page {
+        width: 400px;  
+      }
+          
+    .text-second-wrap {
+      width: 100%;
+      margin-inline: auto;
+      position: relative;
+      top: -30px;
+    }
+
+    }
+
+
+
+
   /*-- ======================= 740  ======================== */
   @media (min-width: 740px) {
 
